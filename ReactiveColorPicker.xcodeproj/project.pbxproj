@@ -13,7 +13,54 @@
 		40DE1C4116D0032B009EE94D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 40DE1C3F16D0032B009EE94D /* Credits.rtf */; };
 		40DE1C4416D0032B009EE94D /* RCPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DE1C4316D0032B009EE94D /* RCPAppDelegate.m */; };
 		40DE1C4716D0032B009EE94D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40DE1C4516D0032B009EE94D /* MainMenu.xib */; };
+		40DE1C4F16D003CE009EE94D /* RCPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DE1C4E16D003CE009EE94D /* RCPView.m */; };
+		40DE1C6116D004AD009EE94D /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DE1C5A16D0049B009EE94D /* ReactiveCocoa.framework */; };
+		40DE1C6916D02A86009EE94D /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 40DE1C5A16D0049B009EE94D /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40DE1C5916D0049B009EE94D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DE1C5116D0049B009EE94D /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88037F8315056328001A5B19;
+			remoteInfo = ReactiveCocoa;
+		};
+		40DE1C5B16D0049B009EE94D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DE1C5116D0049B009EE94D /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88F440AB153DAC820097B4C3;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		40DE1C5D16D0049B009EE94D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DE1C5116D0049B009EE94D /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88CDF7DC15000FCF00163A9F;
+			remoteInfo = ReactiveCocoaTests;
+		};
+		40DE1C5F16D004A8009EE94D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40DE1C5116D0049B009EE94D /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 88037F8215056328001A5B19;
+			remoteInfo = ReactiveCocoa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40DE1C6816D02A7D009EE94D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				40DE1C6916D02A86009EE94D /* ReactiveCocoa.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40DE1C2D16D0032B009EE94D /* ReactiveColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +76,9 @@
 		40DE1C4216D0032B009EE94D /* RCPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCPAppDelegate.h; sourceTree = "<group>"; };
 		40DE1C4316D0032B009EE94D /* RCPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCPAppDelegate.m; sourceTree = "<group>"; };
 		40DE1C4616D0032B009EE94D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		40DE1C4D16D003CE009EE94D /* RCPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCPView.h; sourceTree = "<group>"; };
+		40DE1C4E16D003CE009EE94D /* RCPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCPView.m; sourceTree = "<group>"; };
+		40DE1C5116D0049B009EE94D /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = Vendor/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40DE1C6116D004AD009EE94D /* ReactiveCocoa.framework in Frameworks */,
 				40DE1C3116D0032B009EE94D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +97,7 @@
 		40DE1C2416D0032B009EE94D = {
 			isa = PBXGroup;
 			children = (
+				40DE1C5016D0048C009EE94D /* Vendor */,
 				40DE1C3616D0032B009EE94D /* ReactiveColorPicker */,
 				40DE1C2F16D0032B009EE94D /* Frameworks */,
 				40DE1C2E16D0032B009EE94D /* Products */,
@@ -86,6 +138,8 @@
 				40DE1C4316D0032B009EE94D /* RCPAppDelegate.m */,
 				40DE1C4516D0032B009EE94D /* MainMenu.xib */,
 				40DE1C3716D0032B009EE94D /* Supporting Files */,
+				40DE1C4D16D003CE009EE94D /* RCPView.h */,
+				40DE1C4E16D003CE009EE94D /* RCPView.m */,
 			);
 			path = ReactiveColorPicker;
 			sourceTree = "<group>";
@@ -102,6 +156,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		40DE1C5016D0048C009EE94D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				40DE1C5116D0049B009EE94D /* ReactiveCocoa.xcodeproj */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		40DE1C5216D0049B009EE94D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40DE1C5A16D0049B009EE94D /* ReactiveCocoa.framework */,
+				40DE1C5C16D0049B009EE94D /* libReactiveCocoa-iOS.a */,
+				40DE1C5E16D0049B009EE94D /* ReactiveCocoaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,10 +184,12 @@
 				40DE1C2916D0032B009EE94D /* Sources */,
 				40DE1C2A16D0032B009EE94D /* Frameworks */,
 				40DE1C2B16D0032B009EE94D /* Resources */,
+				40DE1C6816D02A7D009EE94D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				40DE1C6016D004A8009EE94D /* PBXTargetDependency */,
 			);
 			name = ReactiveColorPicker;
 			productName = ReactiveColorPicker;
@@ -142,12 +216,42 @@
 			mainGroup = 40DE1C2416D0032B009EE94D;
 			productRefGroup = 40DE1C2E16D0032B009EE94D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 40DE1C5216D0049B009EE94D /* Products */;
+					ProjectRef = 40DE1C5116D0049B009EE94D /* ReactiveCocoa.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				40DE1C2C16D0032B009EE94D /* ReactiveColorPicker */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		40DE1C5A16D0049B009EE94D /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = 40DE1C5916D0049B009EE94D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DE1C5C16D0049B009EE94D /* libReactiveCocoa-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReactiveCocoa-iOS.a";
+			remoteRef = 40DE1C5B16D0049B009EE94D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40DE1C5E16D0049B009EE94D /* ReactiveCocoaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.octest;
+			remoteRef = 40DE1C5D16D0049B009EE94D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		40DE1C2B16D0032B009EE94D /* Resources */ = {
@@ -169,10 +273,19 @@
 			files = (
 				40DE1C3D16D0032B009EE94D /* main.m in Sources */,
 				40DE1C4416D0032B009EE94D /* RCPAppDelegate.m in Sources */,
+				40DE1C4F16D003CE009EE94D /* RCPView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40DE1C6016D004A8009EE94D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReactiveCocoa;
+			targetProxy = 40DE1C5F16D004A8009EE94D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		40DE1C3916D0032B009EE94D /* InfoPlist.strings */ = {

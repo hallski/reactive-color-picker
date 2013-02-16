@@ -8,8 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class RCPView;
+
 @interface RCPAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-
+@property (assign) IBOutlet RCPView *colorPickerView;
 @end

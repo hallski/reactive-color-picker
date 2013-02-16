@@ -7,12 +7,16 @@
 //
 
 #import "RCPAppDelegate.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "RCPView.h"
 
 @implementation RCPAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [RACAble(self.colorPickerView.color) subscribeNext:^(id x) {
+        NSLog(@"Color changes %@", x);
+    }];
 }
 
 @end
