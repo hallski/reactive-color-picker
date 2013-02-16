@@ -10,15 +10,15 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface RCPView ()
-@property(nonatomic, strong) IBOutlet NSSlider *redSlider;
-@property(nonatomic, strong) IBOutlet NSSlider *greenSlider;
-@property(nonatomic, strong) IBOutlet NSSlider *blueSlider;
-@property(nonatomic, strong) IBOutlet NSTextField *redValueLabel;
-@property(nonatomic, strong) IBOutlet NSTextField *greenValueLabel;
-@property(nonatomic, strong) IBOutlet NSTextField *blueValueLabel;
-@property(nonatomic, strong) IBOutlet NSTextField *redLabel;
-@property(nonatomic, strong) IBOutlet NSTextField *greenLabel;
-@property(nonatomic, strong) IBOutlet NSTextField *blueLabel;
+@property(assign) IBOutlet NSSlider *redSlider;
+@property(assign) IBOutlet NSSlider *greenSlider;
+@property(assign) IBOutlet NSSlider *blueSlider;
+@property(assign) IBOutlet NSTextField *redValueLabel;
+@property(assign) IBOutlet NSTextField *greenValueLabel;
+@property(assign) IBOutlet NSTextField *blueValueLabel;
+@property(assign) IBOutlet NSTextField *redLabel;
+@property(assign) IBOutlet NSTextField *greenLabel;
+@property(assign) IBOutlet NSTextField *blueLabel;
 
 @property(nonatomic) CGFloat red;
 @property(nonatomic) CGFloat green;
