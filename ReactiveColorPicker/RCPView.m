@@ -79,7 +79,7 @@
     
     
     // Change the color of the background
-    __block __typeof(self) weakSelf = self;
+    __weak __typeof(self) weakSelf = self;
     [RACAble(self.color) subscribeNext:^(NSColor *color) {
         weakSelf.layer.backgroundColor = color.CGColor;
     }];
